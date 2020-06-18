@@ -1,6 +1,6 @@
 package Electrodomesticos;
 
-public class Lavadora extends Electrodomestico{
+public class lavadora extends Electrodomestico{
 	  
     //Constantes
   
@@ -35,17 +35,17 @@ public class Lavadora extends Electrodomestico{
     //Constructor
   
     
-    public Lavadora(){
+    public lavadora(){
         this(PRECIO_BASE_DEF, PESO_DEF, CONSUMO_ENERGETICO_DEF, COLOR_DEF, CARGA_DEF);
     }
   
     
-    public Lavadora(double precioBase, double peso){
+    public lavadora(double precioBase, double peso){
         this(precioBase, peso, CONSUMO_ENERGETICO_DEF, COLOR_DEF, CARGA_DEF);
     }
   
     
-    public Lavadora(double precioBase, double peso, char consumoEnergetico, String color, int carga){
+    public lavadora(double precioBase, double peso, char consumoEnergetico, String color, int carga){
         super(precioBase,peso, consumoEnergetico,color);
         this.carga=carga;
     }
